@@ -1,0 +1,303 @@
+/* Font face */
+
+@font-face {
+  font-family: "HK Grotesk";
+  font-weight: 900;
+  src: url(./1-Assets/hkgrotesk-bold-webfont.woff2),
+    url(./1-Assets/hkgrotesk-bold-webfont.woff);
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  font-weight: 400;
+  src: url(./1-Assets/hkgrotesk-semibold-webfont.woff2),
+    url(./1-Assets/hkgrotesk-semibold-webfont.woff);
+}
+
+/* Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img,
+iframe {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* End of reset */
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  font-family: "HK Grotesk";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  background-color: #ecc7ab;
+  color: #fff;
+  padding: 20px;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 60px 50px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+section {
+  padding: 20px;
+  position: relative;
+  margin: 0 auto 200px;
+  max-width: 960px;
+}
+
+header nav a {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+header nav a img {
+  margin-right: 10px;
+}
+
+/* Menu Nav */
+
+.menu {
+  background-color: #ffd363;
+  width: 700px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: right;
+  z-index: 2;
+  transform: translateX(100%);
+}
+
+.menu .nav-menu {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-60%);
+  padding-top: 100px;
+}
+
+.pages {
+  margin-bottom: 50px;
+  font-size: 100px;
+  line-height: 1;
+}
+
+.social {
+  font-size: 26px;
+  line-height: 1.25;
+}
+
+.menu nav a {
+  display: block;
+}
+
+/* Absolute position of nav menu. Delete .nav-menu if used */
+
+/* .pages {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  right: 50px;
+  font-size: 120px;
+  margin-bottom: 40px;
+  line-height: 0.9;
+}
+
+.social {
+  position: absolute;
+  right: 50px;
+  bottom: 45px;
+  font-size: 26px;
+  line-height: 1.25;
+} */
+
+.natural {
+  margin-top: 150px;
+}
+
+.natural img {
+  max-width: 430px;
+}
+
+.natural .copy {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 120px;
+  max-width: 550px;
+  line-height: 0.9;
+  transform: translateY(-50%);
+}
+
+.natural .circle {
+  position: absolute;
+  top: 60px;
+  left: -40px;
+  width: 144px;
+  height: 144px;
+  background-color: #d9a724;
+  border-radius: 100px;
+}
+
+.natural .square {
+  position: absolute;
+  bottom: 0;
+  right: 60%;
+  width: 115px;
+  height: 115px;
+  background-color: #738da0;
+}
