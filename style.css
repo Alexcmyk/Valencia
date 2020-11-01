@@ -224,6 +224,7 @@ header nav a img {
   text-align: right;
   z-index: 2;
   transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
 }
 
 .menu .nav-menu {
@@ -360,11 +361,6 @@ header nav a img {
   padding: 160px 20px;
 }
 
-.lookbook:hover img,
-.lookbook:hover h3 {
-  transform: scale(1.1);
-}
-
 .lookbook img {
   width: 70px;
   transition: transform 300ms ease-in-out;
@@ -407,7 +403,7 @@ header nav a img {
 .section_3 .circle {
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 140px;
   width: 90px;
   height: 90px;
   background-color: #d9a724;
@@ -416,9 +412,47 @@ header nav a img {
 
 .section_3 .square {
   position: absolute;
-  top: 0px;
+  top: 50%;
   left: 0px;
   width: 90px;
   height: 90px;
   background-color: #738da0;
+  transform: translateY(-50%);
+}
+
+footer {
+  background-image: url(./1-Assets/footer.svg);
+  background-position: top;
+  background-size: cover;
+  height: 260px;
+  padding: 200px 0;
+  text-align: center;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 85px;
+  width: 100%;
+}
+
+footer nav a {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+/* hover states */
+
+.lookbook:hover img,
+.lookbook:hover h3 {
+  transform: scale(1.1);
 }
